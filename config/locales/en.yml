@@ -1,0 +1,4 @@
+# English strings go here for Rails i18n
+en:
+  label_page_updated_date: "%{value} ago"
+  label_latest_diff: "(view change)"
