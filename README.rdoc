@@ -40,5 +40,7 @@ Displays a link to the latest diff of the current wiki page.
 
 Usage:
 * <code>{{num_child_pages}}</code>
+* <code>{{num_child_pages(directChildrenOnly)}}</code>
 
 Displays the count of the number of child pages underneath the current wiki page.
+If the directChildrenOnly argument is present and true, the count is restricted to direct shildren of the page only and does not include children of children.
