@@ -3,7 +3,11 @@ module RedmineWikiMacrosCollection
     desc "Macro to display a link to the diff of the last wiki revision" 
 
     macro :latest_diff do |obj, args|
-       	versionTo = obj.version
+        if !obj.is_a?(WikiContent) && !obj.is_a?(WikiContent::Version)
+            raise 'This macro can be called from wiki pages only.'
+        end
+
+       	versionTo = obj.is_a?(WikiContent) ? obj.version : obj.page.content.version
         o = ''
         if versionTo > 1    
             o = '<span class="cmhr_wiki_macros_link_to_history">'
