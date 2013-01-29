@@ -7,8 +7,8 @@ Provides several hopefully useful macros to redmine.
 === created_by
 
 Usage: 
-{{created_by}}
-{{created_by(includeAvatar)}}
+* <code>{{page_created_by}}</code>
+* <code>{{page_created_by(includeAvatar)}}</code>
 
 Displays the name of the user who created the current wiki page - the name links to the user's profile.  
 If the includeAvatar argument is present and is true, it will also display the user's avatar next to the link.
@@ -16,8 +16,8 @@ If the includeAvatar argument is present and is true, it will also display the u
 === page_updated_by
 
 Usage: 
-{{page_updated_by}}
-{{page__by(includeAvatar)}}
+* <code>{{page_updated_by}}</code>
+* <code>{{page_updated_by(includeAvatar)}}</code>
 
 Displays the name of the user who performed the last update on the current wiki page - the name links to the user's profile.  
 If the includeAvatar argument is present and is true, it will also display the user's avatar next to the link.
@@ -25,17 +25,20 @@ If the includeAvatar argument is present and is true, it will also display the u
 === page_updated_date
 
 Usage: 
-{{page_updated_date}}
+* <code>{{page_updated_date}}</code>
 
 Displays the date the current page was last updated using the time_tag function.
 
 === latest_diff
 
 Usage:
-{{latest_diff}}
+* <code>{{latest_diff}}</code>
 
 Displays a link to the latest diff of the current wiki page.
 
 === num_child_pages
+
+Usage:
+* <code>{{num_child_pages}}</code>
 
 Displays the count of the number of child pages underneath the current wiki page.
