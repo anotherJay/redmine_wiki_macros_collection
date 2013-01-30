@@ -4,7 +4,7 @@ Provides several hopefully useful macros to redmine.
 
 == Available Macros
 
-=== created_by
+=== page_created_by
 
 Usage: 
 * <code>{{page_created_by}}</code>
